@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--NAVIGATION-->
+    <div style="padding-top: 72px;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-gradient p-3">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a class="d-block w-25" href="#">
+                    <img src="images/logo.svg" class="image-logo" alt="directory">
+                </a>
+            </div>
+            <div class="d-flex align-items-center rounded-2 search-width">
+                <form class="d-flex my-3 my-lg-0">
+                    <input type="search" placeholder="Search" aria-label="Search" class="form-control me-2 border-2 px-2">
+                    <button class="btn btn-outline-primary">Search</button>
+                </form>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse overthetop" id="navbarLinks">
+                <ul class="navbar-nav justify-content-end w-100 fs-6">
+                    <li class="nav-item dropdown mx-0">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold" id="homeDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDrop">
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Rooms</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Restaurant</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Travel</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Real Estate</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown position-static mx-0">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold" id="templateDrop" role="button" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">Template</a>
+                        <div class="dropdown-menu pt-0 border-0 vw-lg-100 w-100" aria-hidden="true">
+                            <div class="row mx-0">
+                                <div class="col-lg-9">
+                                    <div class="row p-lg-3 bg-color pb-6">
+                                        <div class="col-lg-3 pb-3">
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Home page</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Rooms</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Restaurants</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Travel</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Real estate</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Restaurants</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Category - Map on the Top</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Category - Map on the right</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Category - No map</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Restaurant Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 pb-3">
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Rooms</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Category - Map on the Top</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Category - Map on the right</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Category - No map</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Rooms Detail</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Blog</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Blog</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Post</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Pages</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Comparison</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Team</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 pb-3">
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Pages</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Pricing</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Text Page</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">F.A.Q.s</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Coming Soon</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">404 Page</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Knowledge Base</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Knowledge Base - Topic</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Terms & Conditions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">Host</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Add new listing - 6 pages</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Bookings - list view</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 pb-3">
+                                            <div>
+                                                <h3 class="fw-bold fs-5 my-2">User</h3>
+                                                <ul class="list-group">
+                                                    <li class="list-item"><a href="#" class="nav-item">Profile</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Account</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Personal info - forms</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Password & security - forms</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Sign in</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Sign out</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Booking Process - 4 pages</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Bookings - Grid View</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Bookings Details</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Invoice</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Messages</a></li>
+                                                    <li class="list-item"><a href="#" class="nav-item">Messages detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="row d-none d-lg-flex p-lg-3 bg-color-1 pb-6 justify-content-center">
+                                        <div class="row col-xl-3 col-lg-5 align-items-center">
+                                            <div class="col-lg-2">
+                                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h3 class="fs-6 my-2 w-100">Best Rentals</h3>
+                                                <p class="nav-item">Find the perfect place</p>
+                                            </div>
+                                        </div>
+                                        <div class="row col-xl-3 col-lg-5 align-items-center">
+                                            <div class="col-lg-2">
+                                                <i class="fa fa-money" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h3 class="fs-6 my-2">Earn Points</h3>
+                                                <p class="nav-item">And get great rewards</p>
+                                            </div>
+                                        </div>
+                                        <div class="row col-xl-3 col-lg-5 align-items-center">
+                                            <div class="col-lg-2">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h3 class="fs-6 my-2">+51 981453268</h3>
+                                                <p class="nav-item">24/7 Available Support</p>
+                                            </div>
+                                        </div>
+                                        <div class="row col-xl-3 col-lg-5 align-items-center">
+                                            <div class="col-lg-2">
+                                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h3 class="fs-6 my-2">Secure Payment</h3>
+                                                <p class="nav-item">Secure Payment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-none d-lg-block col-lg-3 p-0">
+                                    <div style="display:block;overflow:hidden;position:absolute;top:0;bottom:1.5%;box-sizing:border-box">
+                                        <img src="images/template-img.jpg" alt="TODO">
+                                    </div>
+                                </div>                       
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-0"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item dropdown mx-xl-1 mx-0">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold" id="homeDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Docs</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDrop">
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace disabled">DOCUMENTATION</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Directory Structure</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Next.js</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Customizing CSS</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Credits</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace disabled">COMPONENTS</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Bootstrap</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item font-monospace">Theme</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-0"><a href="#" class="nav-link">Sign in</a></li>
+                    <li class="nav-item mx-0"><a href="#" class="nav-link">Sign up</a></li>
+                    <li class="nav-item mx-0"><a href="#" class="d-lg-none d-xl-inline-block btn btn-primary fw-bolder text-light font-monospace">ADD A LISTING</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <!--END OF NAVIGATION-->
+
+    <!--MAIN-->
+        <!--FIRST SECTION: JUMBOTRON-->
+            <div class="p-5 mb-4 mt-3 bg-light position-static slideMeJumbo">
+                <div class="container py-5 my-5">
+                    <p class="col-md-8 fs-4 px-lg-5 mb-lg-0 mb-3 text-uppercase text-muted">
+                        the best holiday experience
+                    </p>
+                    <h1 class="display-5 fw-bold px-lg-5 mb-lg-0 mb-3 text-light" style="font-size: 70px">Stay like a local</h1>
+                    <div class="search-bar ms-lg-5 p-2 mt-4 mb-lg-0 mb-3 px-lg-2 px-4 bg-white w-100">
+                        <form>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-12 mb-lg-0 mb-3 pb-2 pb-lg-0 d-flex form-group align-items-center search-bar-item">
+                                    <input type="text" class="form-control border-0 shadow-0" name="searchJumbo" placeholder="What are you searching?">
+                                </div>
+                                <div class="col-lg-3 col-12 mb-lg-0 mb-3 pb-2 pb-lg-0 d-flex form-group align-items-center search-bar-item">
+                                    <input type="location" class="form-control border-0 shadow-0" name="locationJumbo" placeholder="Location">
+                                    <label for="locationJumbo">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+                                <div class="col-lg-3 col-12 mb-lg-0 mb-3 pb-2 pb-lg-0 d-flex form-group align-items-center justify-content-center search-bar-item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-success btn-xl px-5 text-start font-monospace dropdown-toggle rounded-pill" id="jumboDrop" data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
+                                        <ul class="dropdown-menu" aria-labelledby="jumboDrop">
+                                            <li>
+                                                <a href="#" class="dropdown-item font-monospace">Restaurants</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item font-monospace">Hotels</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item font-monospace">Cafes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item font-monospace">Garage</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-12 mb-lg-0 mb-3 pb-2 pb-lg-0 text-center">
+                                    <button class="btn btn-primary px-5 py-2 rounded-pill search-bar-button">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <!--END FIRST SECTION: JUMBOTRON-->
+    <!--END OF MAIN-->
+    <!--Scripts-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    
+
+</body>
+</html>
