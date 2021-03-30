@@ -47,6 +47,19 @@ body,html{
 .search-bar-button{
     text-align: center;
 }
+.guide-card-prague{ background-image: url(../images/prague.jpg); }
+
+.guide-card-new-york{ background-image: url(../images/new-york.jpg); }
+
+.guide-card-barcelona{ background-image: url(../images/barcelona.jpg); }
+
+.guide-card-paris{ background-image: url(../images/paris.jpg); }
+
+.guide-card-prague,.guide-card-new-york,.guide-card-paris,.guide-card-barcelona{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 div.slideMeJumbo{
     background-image: url(../images/travel1.jpg);
     background-position: center;
