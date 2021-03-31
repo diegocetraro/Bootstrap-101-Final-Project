@@ -59,6 +59,33 @@ body,html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: transform linear 0.2s;
+}
+
+.heart-icon{
+    font-size: 26px; 
+    color: rgb(224, 223, 223); 
+    opacity: 0.5;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 1.5rem;
+    padding: 10px;
+}
+.fs-7{
+    font-size: 12px;
+}
+.user-icon{
+    font-size: 32px;
+    color:rgba(209, 209, 209, 0.863);
+}
+.user-icon:hover{
+    color:rgba(151, 148, 148, 0.9)
+}
+.heart-icon:hover{
+    opacity: 0.7;
+    background-color: rgba(0,0,0,0.7);
+}
+.guide-card-prague:hover,.guide-card-new-york:hover,.guide-card-paris:hover,.guide-card-barcelona:hover{
+    transform: translateY(-5px);
 }
 div.slideMeJumbo{
     background-image: url(../images/travel1.jpg);
