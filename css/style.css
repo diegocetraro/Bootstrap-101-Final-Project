@@ -63,7 +63,7 @@ body,html{
 }
 
 .card-ease{
-    transition: all linear 0.2s;
+    transition: transform linear 0.2s;
 }
 
 .guide-card-prague:hover,.guide-card-new-york:hover,.guide-card-paris:hover,.guide-card-barcelona:hover, .card-ease:hover{
@@ -103,6 +103,18 @@ div.slideMeJumbo{
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
+
+.size-carousel{
+    width: 700px;
+}
+.bottom-adjust{
+    display:block;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    bottom:0%;
+    box-sizing:border-box;
+}
 /*ANIMATIONS KEYFRAMES*/
 @keyframes slideMe{
     0%{
@@ -122,10 +134,11 @@ div.slideMeJumbo{
     }
 }
 /*RESPONSIVE QUERIES*/
+
 @media(max-width: 990px){
     .overthetop{
         overflow-y: auto;
-        max-height: 80vh;
+        max-height: 60vh;
     }
     .search-width{
         width: 50%;
@@ -142,6 +155,9 @@ div.slideMeJumbo{
 }
 @media(max-width: 580px){
     .search-width{
+        width: 100%;
+    }
+    .size-carousel{
         width: 100%;
     }
 }
