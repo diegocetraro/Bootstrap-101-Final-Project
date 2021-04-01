@@ -115,6 +115,14 @@ div.slideMeJumbo{
     bottom:0%;
     box-sizing:border-box;
 }
+.footer-icon{
+    font-size: 20px;
+    color: grey;
+    transition: color linear 0.2s;
+}
+.footer-icon:hover{
+    color: rgba(0, 0, 255, 0.699);
+}
 /*ANIMATIONS KEYFRAMES*/
 @keyframes slideMe{
     0%{
