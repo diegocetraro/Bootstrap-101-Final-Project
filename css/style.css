@@ -29,6 +29,7 @@ body,html{
 .nav-link{
     font-size: 13px;
 }
+
 .overthetop{
    transition: all linear 0.3s;
 }
@@ -76,6 +77,8 @@ body,html{
     background-color: rgba(0,0,0,0.3);
     border-radius: 1.5rem;
     padding: 10px;
+    transition: opacity linear 0.2s,
+                background linear 0.2s;
 }
 
 .fs-7{
@@ -84,9 +87,11 @@ body,html{
 .user-icon{
     font-size: 32px;
     color:rgba(209, 209, 209, 0.863);
+    transition: color linear 0.2s;
 }
 .user-icon:hover{
-    color:rgba(151, 148, 148, 0.9)
+    color:rgba(151, 148, 148, 0.9);
+    
 }
 .heart-icon:hover{
     opacity: 0.7;
@@ -122,6 +127,13 @@ div.slideMeJumbo{
 }
 .footer-icon:hover{
     color: rgba(0, 0, 255, 0.699);
+}
+
+.swiper-image-transform{
+    transition: transform linear 0.2s;
+}
+.swiper-image-transform:hover{
+    transform: scale(1.1);
 }
 /*ANIMATIONS KEYFRAMES*/
 @keyframes slideMe{

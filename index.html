@@ -230,25 +230,128 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item mx-0"><a href="#" class="nav-link">Sign in</a></li>
-                    <li class="nav-item mx-0"><a href="#" class="nav-link">Sign up</a></li>
+                    <li class="nav-item mx-0">
+                        <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#sign-in-modal">Sign in</a>
+                    </li>
+                    <li class="nav-item mx-0">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#sign-up-modal">Sign up</a>
+                    </li>
                     <li class="nav-item mx-0"><a href="#" class="d-lg-none d-xl-inline-block btn btn-primary fw-bolder text-light font-monospace">ADD A LISTING</a></li>
                 </ul>
             </div>
             </div>
         </div>
+        
     </nav>
     <!--END OF NAVIGATION-->
-
+    <!-- Button trigger modal -->
+    <!--SIGN IN MODAL-->
+    <div class="modal fade" id="sign-in-modal" tabindex="-1" aria-labelledby="sign-in-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center" id="sign-in-modalLabel">Sign In!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="form-group" action=""></form>
+                <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email or Username: </label>
+                      <input type="email" class="form-control" aria-describedby="emailHelp" name="email" id="email">
+                      <div id="emailHelp" class="form-text">Enter your email or username.</div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="password" class="form-label">Password: </label>
+                      <input type="password" class="form-control" aria-describedby="passHelp" name="password" id="password">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-primary">Sign in</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!--END SIGN UP MODAL-->
+    <!--SIGN IN MODAL-->
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" aria-labelledby="sign-up-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center" id="sign-up-modalLabel">Sign In!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="form-group" action=""></form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username: </label>
+                        <input type="text" class="form-control" aria-describedby="usernameHelp" name="username" id="username">
+                        <div id="usernameHelp" class="form-text">Enter a username. At least 10 characters...</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name: </label>
+                        <input type="text" class="form-control"  name="name" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name" class="form-label">Last Name: </label>
+                        <input type="text" class="form-control" name="last-name" id="last-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="birth-date" class="form-label">Birthdate: </label>
+                        <input type="date" class="form-control" name="birth-date" id="birth-date">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email: </label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" name="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password: </label>
+                        <input type="password" class="form-control" aria-describedby="passHelp" name="password" id="password">
+                        <div id="passHelp" class="form-text">Enter a password. At least 10 characters. Combination of numbers, letters (Upper, lower) and special characters</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Principal Interest: </label>
+                        <div class="form-check">
+                            <ul class="list-group" aria-labelledby="Topic">
+                                <li class="list-item fs-6">
+                                    <input class="form-check-input" type="radio" name="radio" id="p-interest-room">
+                                    <label class="form-check-label" for="p-interest-rooms">Rooms</label>
+                                </li>
+                                <li class="list-item fs-6">
+                                    <input class="form-check-input" type="radio" name="radio" id="p-interest-restaurants">
+                                    <label class="form-check-label" for="p-interest-restaurants">Restaurants</label>
+                                </li>
+                                <li class="list-item fs-6">
+                                    <input class="form-check-input" type="radio" name="radio" id="p-interest-travel">
+                                    <label class="form-check-label" for="p-interest-travel">Travel</label>
+                                </li>
+                                <li class="list-item fs-6">
+                                    <input class="form-check-input" type="radio" name="radio" id="p-interest-realestate">
+                                    <label class="form-check-label" for="p-interest-realestate">Real Estate</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-primary">Sign un</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!--END SIGN UP MODAL-->
     <!--MAIN-->
         <!--FIRST SECTION: JUMBOTRON-->
             <div class="p-5 mt-lg-3 mt-5 bg-light position-static slideMeJumbo">
                 <div class="container py-5 my-5">
-                    <p class="col-md-8 fs-4 px-lg-5 mb-lg-0 mb-3 text-uppercase text-muted">
+                    <p class="col-md-8 fs-4 pe-lg-5 mb-lg-0 mb-3 text-uppercase text-muted">
                         the best holiday experience
                     </p>
-                    <h1 class="display-5 fw-bold px-lg-5 mb-lg-0 mb-3 text-light" style="font-size: 70px">Stay like a local</h1>
-                    <div class="search-bar ms-lg-5 p-2 mt-4 mb-lg-0 mb-3 px-lg-2 px-4 bg-white w-100">
+                    <h1 class="display-5 fw-bold pe-lg-5 mb-lg-0 mb-3 text-light" style="font-size: 70px">Stay like a local</h1>
+                    <div class="search-bar p-2 mt-4 mb-lg-0 mb-3 px-lg-2 px-4 bg-white w-100">
                         <form>
                             <div class="row justify-content-center">
                                 <div class="col-lg-3 col-12 mb-lg-0 mb-3 pb-2 pb-lg-0 d-flex form-group align-items-center search-bar-item">
@@ -658,22 +761,22 @@
                     <div class="row" style="max-height: 200px;">
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/casa2.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/casa2.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/kitchen.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/kitchen.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/people2.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/people2.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/travel2.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/travel2.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                     </div>
@@ -682,22 +785,22 @@
                     <div class="row" style="max-height: 200px;">
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/travel1.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/travel1.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/prague.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/prague.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/forest.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/forest.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                         <div class="col-3 p-0">
                             <a href="#">
-                                <img src="images/paris.jpg" class="img-fluid" style="min-height: 100%; max-width: 100%;" alt="">
+                                <img src="images/paris.jpg" class="img-fluid swiper-image-transform" style="min-height: 100%; max-width: 100%;" alt="">
                             </a>
                         </div>
                     </div>
